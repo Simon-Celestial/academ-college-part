@@ -424,6 +424,7 @@ body {
   width: 27px;
   height: 27px;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .pages-control {
@@ -443,6 +444,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.pages-control > div:hover {
+  color: white;
+  background-color: var(--green);
+  border: 1px solid var(--green);
 }
 .pages-control p {
   font-weight: 400;
@@ -453,6 +461,7 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 22px;
+  cursor: pointer;
 }
 
 .classes-price-container {
