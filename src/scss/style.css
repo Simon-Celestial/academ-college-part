@@ -721,11 +721,12 @@ body {
     margin-top: 25px;
   }
   .price-item-bordered {
-    height: 535px;
+    height: auto;
   }
   .class-properties {
     margin-top: auto;
     height: 62px;
+    margin-top: 25px;
   }
   .title-item {
     height: auto;
