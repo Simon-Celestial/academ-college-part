@@ -730,6 +730,9 @@ body {
   .title-item {
     height: auto;
   }
+  .image-container {
+    height: 172px;
+  }
 }
 @media screen and (max-width: 650px) {
   .courses-main-content {
@@ -769,6 +772,10 @@ body {
   .sorting-type-block {
     width: 100%;
   }
+  .image-container {
+    height: auto;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   .teacher-abilities {
@@ -782,5 +789,10 @@ body {
   }
   .courses-top-background h2 {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .courses-main-content {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
