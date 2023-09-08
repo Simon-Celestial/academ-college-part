@@ -348,7 +348,7 @@ body {
 .right-content {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0 15px 80px 15px;
   height: auto;
 }
 
@@ -477,12 +477,17 @@ body {
   border-radius: 10px;
   margin-bottom: 30px;
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.price-item-bordered:hover {
+  box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.15);
 }
 
 .image-container {
   display: flex;
   width: 100%;
   height: 243px;
+  cursor: pointer;
 }
 .image-container img {
   width: 100%;
@@ -491,4 +496,125 @@ body {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.title-item {
+  display: flex;
+  width: 100%;
+  height: 197px;
+  padding: 30px 20px 0 20px;
+  flex-direction: column;
+}
+
+.teacher-info {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-name-block {
+  display: flex;
+  width: auto;
+  gap: 20px;
+}
+.teacher-name-block img {
+  width: 50px;
+  height: 50px;
+}
+
+.teacher-name-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.teacher-name-item a {
+  font-size: 16px;
+  color: var(--dark-text);
+  font-family: "roboto-medium";
+}
+.teacher-name-item p {
+  font-size: 14px;
+  color: var(--gray-text);
+  font-family: "roboto-regular";
+}
+
+.course-price-item {
+  display: flex;
+}
+.course-price-item b {
+  font-size: 22px;
+  color: var(--green);
+  font-family: "roboto-slab";
+}
+
+.teacher-abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+.teacher-abilities h2 {
+  font-size: 20px;
+  font-family: "roboto-slab";
+  color: var(--dark-text);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.teacher-abilities h2:hover {
+  color: var(--green);
+}
+.teacher-abilities p {
+  font-size: 14px;
+  font-family: "roboto-regular";
+  color: var(--dark-text);
+  line-height: 25px;
+}
+
+.class-properties {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 100%;
+  border-top: 1px solid var(--light-gray);
+  cursor: pointer;
+}
+.class-properties a {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "roboto-regular";
+  gap: 8px;
+  color: #677073;
+}
+.class-properties a:nth-child(1) {
+  border-right: 1px solid var(--light-gray);
+}
+.class-properties a i {
+  color: var(--green);
+}
+
+.results-info {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.results-info p {
+  font-size: 14px;
+  color: var(--dark-text);
+  font-family: "roboto-regular";
+}
+
+.view-no-margin {
+  margin-right: 0;
 }/*# sourceMappingURL=style.css.map */
