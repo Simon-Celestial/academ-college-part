@@ -120,6 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 15px;
+  height: 100%;
 }
 
 .search-panel-block {
@@ -138,6 +139,13 @@ body {
   height: 100%;
   outline: 0;
   border: 0;
+  font-size: 14px;
+}
+.search-panel-block .search-icon-box {
+  display: flex;
+  cursor: pointer;
+}
+.search-panel-block .search-icon-box i {
   font-size: 14px;
 }
 
@@ -255,6 +263,7 @@ body {
   width: 100%;
   background-color: var(--light-gray);
   height: 3px;
+  padding-left: 8px;
 }
 .filter-volume .gray-volume .green-volume {
   width: 90%;
@@ -278,4 +287,208 @@ body {
 }
 .filter-volume .gray-volume .green-volume .volume-right-circle {
   right: -1%;
+}
+
+.selection-block {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--light-gray);
+  margin-top: 32px;
+  border-radius: 3px;
+}
+.selection-block select {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border: 0;
+  outline: 0;
+  background-color: #f7f7f7;
+}
+.selection-block option {
+  font-weight: normal;
+  display: block;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  padding: 0px 2px 1px;
+}
+
+.tags-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.tags-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.tags-items a {
+  background-color: #f7f7f7;
+  display: inline-block;
+  font-size: 12px;
+  color: #625b66;
+  text-transform: uppercase;
+  padding: 11px 25px;
+  margin: 4px 2px;
+  transition: color 0.3s ease;
+  font-family: "roboto-medium";
+  font-weight: 500;
+}
+.tags-items a:hover {
+  background-color: #6ac142;
+  color: white;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  height: auto;
+}
+
+.block-navigation {
+  width: 780px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.sorting-block {
+  width: 455px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.sorting-item {
+  border: 1px solid #ecedee;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-right: 16px;
+}
+.sorting-item form {
+  display: block;
+}
+.sorting-item form select {
+  outline: 0;
+  border: 0;
+}
+.sorting-item form select option {
+  font-family: "roboto-regular";
+}
+
+.view-item {
+  border: 1px solid #ecedee;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-right: 16px;
+}
+.view-item form {
+  display: block;
+}
+.view-item form label {
+  font-family: "roboto-regular";
+  font-size: 14px;
+}
+.view-item select {
+  outline: 0;
+  border: 0;
+  font-family: "roboto-regular";
+  font-size: 14px;
+}
+
+.sorting-type-block {
+  display: flex;
+  align-items: center;
+  width: 325px;
+}
+
+.sorting-img {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  padding-left: 15px;
+}
+.sorting-img img {
+  width: 27px;
+  height: 27px;
+  opacity: 0.8;
+}
+
+.pages-control {
+  display: flex;
+  align-items: center;
+  color: #252525;
+  gap: 8px;
+  width: 129px;
+}
+.pages-control > div {
+  border: 1px solid var(--light-gray);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "roboto-regular";
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages-control p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "roboto-regular";
+}
+.pages-control img {
+  width: 16px;
+  height: 16px;
+  margin-left: 22px;
+}
+
+.classes-price-container {
+  display: grid;
+  grid-template-columns: 390px 390px;
+  padding-top: 30px;
+}
+
+.price-item-block {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+
+.price-item-bordered {
+  border: 1px solid var(--light-gray);
+  height: 478px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 243px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
